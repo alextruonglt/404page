@@ -37,7 +37,6 @@ img {
 }
 
 .container {
-  height: 100vh;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -53,4 +52,41 @@ img {
   color: #ffffff;
   display: block;
   padding: 0.5rem 1rem;
+}
+
+@media (min-width: 800px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    flex-direction: row;
+
+    align-items: center;
+  }
+  .col-left {
+    height: 100vh;
+  }
+  .col-right {
+    height: 25rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 42%;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  img {
+    width: 33rem;
+    height: 25rem;
+  }
+  .homeBtn {
+    padding: 1rem 2rem;
+  }
 }
